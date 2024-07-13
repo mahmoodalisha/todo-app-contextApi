@@ -1,0 +1,7 @@
+step1:Create the Context: Define a context using createContext().
+step2:Create a Provider Component: Use the context provider to pass down state and dispatch functions.
+step3:Wrap Your Application with the Provider: Ensure your application or part of it is wrapped in the provider component.
+step4:Consume the Context: Use the context in child components using useContext()
+
+createContext creates a new context object. When React renders a component that subscribes to this context, it will read the current context value from the closest matching provider above it in the tree.
+useTodos: This is a custom hook that uses useContext to consume the context. It makes the todos state and dispatch function accessible to any component that calls useTodos.
